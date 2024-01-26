@@ -1,0 +1,184 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[10pt,a4paper]{article}
+\usepackage[left=25mm,right=25mm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\author{}
+\date{}
+
+
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+\epstopdfDeclareGraphicsRule{.gif}{png}{.png}{convert gif:#1 png:\OutputFile}
+\AppendGraphicsExtensions{.gif}
+\usepackage{chngcntr}
+\counterwithin*{equation}{section}
+\counterwithin*{equation}{subsection}
+\usepackage{amsmath}
+
+\usepackage{float} 
+\usepackage{hyperref}
+\usepackage{amsmath}
+\let\oldsubsection\subsection
+\renewcommand{\subsection}{%
+    \setcounter{equation}{0}%
+    \oldsubsection%
+}
+
+\begin{document}
+
+
+\begin{flushleft}
+\begin{LARGE}EE 435 Homework 2 Spring 2024
+\end{LARGE}
+\\Jonathan Hess
+\\\href{https://github.com/Jetsama/EE435/tree/main/HW2}{GitHub Page}
+\end{flushleft}
+
+
+\subsection*{Problem 1 and 2}
+Consider the following operational amplifier. The goal is to obtain an
+expression for the small-signal output voltage in terms of the input variables INV+ and INV-.
+
+\subsubsection*{a)}
+Write a complete set of small-signal equations that can be solved to obtain
+\(V_{OUT}\). Assume the small-signal parameter \(g_o\) is present in all MOS devices.
+
+\subsubsection*{b)}
+Solve these equations by hand for \(V_{OUT}\). If you do not have a solution at
+the end of ½ hour, stop, and comment on your progress and the amount of
+effort that you believe would be required to finish the solution.
+
+\subsubsection*{c)}
+Obtain a parametric (symbolic) solution for the transfer function \(V_{OUT}/V_{IN}\)
+from this set of equations with MATLAB. How many total product terms appear in this
+solution? In this part, \(V_{IN} = V_{IN+} - V_{IN-}\).
+
+\subsubsection*{d)}
+Simplify the solution obtained with MATLAB under the assumption that all \(g_o\) terms are small compared to \(g_m\) terms.
+
+\subsection*{Problem 3}
+A transresistance amplifier with a gain \(R_T\) is shown. Derive an expression
+for the voltage gain of the amplifier as a function of the transresistance gain \(R_T\) and determine what that reduces to if \(R_T\) is very large.
+\includegraphics[width=6in]{images/Problem3.png} \\
+
+
+In this circuit we are using a transresistance amplifier which has a gain of $V_{out} = R_f * i_{in}$. The $i_{in}$ for this circuit is $\frac{V_{in}}{R_1}$ because $V_{neg}$ is a virtual ground. We can then do a KVL.
+
+\begin{equation}
+\label{eq:trans}
+
+\end{equation}
+
+\subsection*{Problem 4}
+Assume the amplifier shown below is designed in a 0.18$\mu$ CMOS process.
+Assume also that \(V_{DD} = 1V\), \(V_{SS} = -1V\), and \(I_{DQ} = 4mA\).
+
+\subsubsection*{a)}
+Analytically determine the \(W\) and \(L\) needed to establish a quiescent output
+voltage of 0.5V when \(V_{INQ} = 0.5V\).
+
+\subsubsection*{b)}
+Verify the transfer characteristics by Spice simulation.
+
+\subsubsection*{c)}
+Analytically determine the dc voltage gain at the Q-point established in a).
+
+\subsubsection*{d)}
+Using SPICE, obtain a plot of the small signal voltage gain versus the
+quiescent output voltage.
+
+\subsection*{Problem 5 and 6}
+Design a 5T op amp to have a dc gain of 50dB and a GB of 2MHz
+in the ON 0.5$\mu$m CMOS process. Assume \(V_{DD} = 3.5V\) and \(C_L = 1pF\).
+Assume also that the bias voltages \(V_{B1}\) and \(V_{B2}\) can be precisely set so that a CMFB circuit is not needed.
+Verify the gain and the GB of your design with a SPICE simulation.
+
+\subsection*{Problem 7}
+Determine the common-mode input range and the output signal swing of
+the amplifier you designed in the previous problem.
+
+\subsection*{Problem 8}
+Assume that the op amp is a single-pole amplifier with gain given by the
+expression \(A(s) = \frac{A_{GB}}{1 + \frac{s}{\omega_A}}\), where the gain-bandwidth product of the op amp is
+\(\omega_A A_{GB} = \omega\). Assuming that the frequency-dependent gain of the op amp can be modeled as
+\(GBA(s) = \frac{A_{GB}}{s}\), determine the transfer function
+\(\frac{V_{OUT}}{V_{IN}}\) for the following two amplifiers.
+
+\subsubsection*{a)}
+\[
+\frac{V_{OUT}}{V_{IN}} = \frac{A_{GB}}{s} \times \frac{1}{1 + \frac{1}{2}s}
+\]
+
+\subsubsection*{b)}
+\[
+\frac{V_{OUT}}{V_{IN}} = \frac{A_{GB}}{s} \times \frac{1}{1 + \frac{1}{10}s}
+\]
+
+\subsubsection*{c)}
+With the same op amp model used in part a), analytically determine the 3dB
+bandwidth of the following two amplifiers.
+
+\subsubsection*{d)}
+Derive the gain of the inverting feedback amplifier in terms of \(A_{V}\) and \(\beta\) and
+comment on why it does not look like the standard feedback equation.
+
+\subsection*{Problem 9}
+It was stated in class that all even-ordered distortion terms introduced by
+the amplifier vanish in symmetric fully differential amplifiers. Prove this fact.
+
+\subsection*{Problem 10 (Extra Credit)}
+The “dead network” of a circuit is obtained by setting all small-signal inputs to 0. That is, by replacing all ac voltage sources with short circuits and all ac current sources with open circuits. The $\beta$ of a feedback amplifier is a characteristic of the “dead network”. Consider the basic inverting and noninverting feedback amplifiers shown below. These are widely used as small-signal voltage amplifiers.
+
+\subsubsection*{a)}
+Show that they both have the same “dead network”.
+
+\subsubsection*{b)}
+The \(\beta\) of the two amplifiers shown is \(\frac{1}{1 + \frac{R_1}{R_2}}\). Show that the gain of the
+noninverting feedback amplifier can be expressed by the standard feedback
+equation
+\[
+A = \frac{V_{OUT}}{V_{IN}} = \frac{1 + \frac{R_2}{R_1}}{\frac{R_2}{R_1}}
+\]
+
+\subsubsection*{c)}
+Take the limit as \(A_V\) goes to $\infty$ for the gain derived in part b) and compare with
+that derived in EE 230 for the gain of the noninverting feedback amplifier.
+
+\subsubsection*{d)}
+Derive the gain of the inverting feedback amplifier in terms of \(A_V\) and \(\beta\) and
+comment on why it does not look like the standard feedback equation.
+
+\end{document}
