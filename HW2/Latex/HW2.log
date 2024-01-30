@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.20)  26 JAN 2024 11:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.20)  29 JAN 2024 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -522,43 +522,380 @@ Package hyperref Info: Link coloring OFF on input line 60.
 \@outlinefile=\write3
 \openout3 = `HW2.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
+<images/Problem1.png, id=4, 266.49562pt x 210.03468pt>
+File: images/Problem1.png Graphic file (type png)
+<use images/Problem1.png>
+Package pdftex.def Info: images/Problem1.png  used on input line 74.
+(pdftex.def)             Requested size: 216.81pt x 170.8803pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
 
 (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
 
 
 (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/Problem3.png, id=4, 353.06906pt x 143.78719pt>
-File: images/Problem3.png Graphic file (type png)
-<use images/Problem3.png>
-Package pdftex.def Info: images/Problem3.png  used on input line 95.
-(pdftex.def)             Requested size: 433.62pt x 176.5939pt.
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+ []
+
+<images/p1p1.png, id=6, 502.12593pt x 448.67625pt>
+File: images/p1p1.png Graphic file (type png)
+<use images/p1p1.png>
+Package pdftex.def Info: images/p1p1.png  used on input line 82.
+(pdftex.def)             Requested size: 216.81pt x 193.73488pt.
+<images/p1p2.png, id=7, 558.58687pt x 442.65375pt>
+File: images/p1p2.png Graphic file (type png)
+<use images/p1p2.png>
+Package pdftex.def Info: images/p1p2.png  used on input line 83.
+(pdftex.def)             Requested size: 216.81pt x 171.81023pt.
+<images/p1p3.png, id=8, 417.05812pt x 484.81125pt>
+File: images/p1p3.png Graphic file (type png)
+<use images/p1p3.png>
+Package pdftex.def Info: images/p1p3.png  used on input line 84.
+(pdftex.def)             Requested size: 216.81pt x 252.03671pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
 
 [1
 
 {C:/Users/Jetsan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/Pr
-oblem3.png>] [2] [3] (HW2.aux)
+oblem1.png> <./images/p1p1.png>] [2 <./images/p1p2.png> <./images/p1p3.png>]
+<images/Problem3.png, id=39, 353.06906pt x 143.78719pt>
+File: images/Problem3.png Graphic file (type png)
+<use images/Problem3.png>
+Package pdftex.def Info: images/Problem3.png  used on input line 143.
+(pdftex.def)             Requested size: 433.62pt x 176.5939pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--144
+
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.147 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.147 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.147 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.147 \begin{equation}
+                       [3 <./images/Problem3.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.151 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.151 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.151 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.151 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.155 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.155 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.155 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.155 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.159 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.159 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.159 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.159 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \begin{equation}
+                      
+<images/Problem4.png, id=54, 307.1475pt x 256.70906pt>
+File: images/Problem4.png Graphic file (type png)
+<use images/Problem4.png>
+Package pdftex.def Info: images/Problem4.png  used on input line 173.
+(pdftex.def)             Requested size: 433.62pt x 362.43768pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--174
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
+
+ []
+
+File: images/Problem4.png Graphic file (type png)
+<use images/Problem4.png>
+Package pdftex.def Info: images/Problem4.png  used on input line 179.
+(pdftex.def)             Requested size: 289.07999pt x 241.62381pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+[5 <./images/Problem4.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.183 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.183 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.183 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.183 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.187 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.187 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.187 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.187 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.192 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.192 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.192 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.192 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.196 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.196 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.196 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.196 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.201 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.201 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.201 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.201 \begin{equation}
+                      
+<images/Problem5.png, id=67, 304.13625pt x 282.30469pt>
+File: images/Problem5.png Graphic file (type png)
+<use images/Problem5.png>
+Package pdftex.def Info: images/Problem5.png  used on input line 221.
+(pdftex.def)             Requested size: 433.62pt x 402.50372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--222
+
+ []
+
+[6]
+<images/Problem8.png, id=75, 501.37312pt x 377.15906pt>
+File: images/Problem8.png Graphic file (type png)
+<use images/Problem8.png>
+Package pdftex.def Info: images/Problem8.png  used on input line 235.
+(pdftex.def)             Requested size: 433.62pt x 326.20932pt.
+
+Overfull \hbox (27.5334pt too wide) in paragraph at lines 230--236
+\OT1/cmr/m/n/10 am-pli-fiers. [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--236
+
+ []
+
+[7 <./images/Problem5.png>] [8 <./images/Problem8.png>]
+<images/Problem10.png, id=93, 331.2375pt x 258.9675pt>
+File: images/Problem10.png Graphic file (type png)
+<use images/Problem10.png>
+Package pdftex.def Info: images/Problem10.png  used on input line 261.
+(pdftex.def)             Requested size: 433.62pt x 339.0286pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
+
+ []
+
+[9 <./images/Problem10.png>] [10] (HW2.aux)
 Package rerunfilecheck Info: File `HW2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11625 strings out of 476331
- 183287 string characters out of 5787293
- 1859660 words of memory out of 5000000
- 31880 multiletter control sequences out of 15000+600000
+ 11697 strings out of 476331
+ 184617 string characters out of 5787293
+ 1858660 words of memory out of 5000000
+ 31928 multiletter control sequences out of 15000+600000
  515533 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,5n,67p,454b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,6n,67p,456b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Jetsan\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1000.pk><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -573,9 +910,9 @@ pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmr7.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmsy7.pfb>
-Output written on HW2.pdf (3 pages, 150598 bytes).
+Output written on HW2.pdf (10 pages, 391833 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

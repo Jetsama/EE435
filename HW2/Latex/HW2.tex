@@ -70,11 +70,59 @@
 
 \subsection*{Problem 1 and 2}
 Consider the following operational amplifier. The goal is to obtain an
-expression for the small-signal output voltage in terms of the input variables INV+ and INV-.
+expression for the small-signal output voltage in terms of the input variables INV+ and INV-.\\
+\includegraphics[width=3in]{images/Problem1.png} \\
+
 
 \subsubsection*{a)}
 Write a complete set of small-signal equations that can be solved to obtain
-\(V_{OUT}\). Assume the small-signal parameter \(g_o\) is present in all MOS devices.
+\(V_{OUT}\). Assume the small-signal parameter \(g_o\) is present in all MOS devices.\\
+
+
+\includegraphics[width=3in]{images/p1p1.png} \\
+\includegraphics[width=3in]{images/p1p2.png} \\
+\includegraphics[width=3in]{images/p1p3.png} \\
+
+\begin{equation}
+\frac{V_{out}}{g_0} + (V_m) gm = \frac{V_{out} - V_a }{g_0} + V_{in-}g_m 
+\end{equation}
+
+\begin{equation}
+\frac{V_{out}}{g_0} \frac{V_{out} - V_a }{g_0} = (V_m) gm + V_{in-}g_m 
+\end{equation}
+\begin{equation}
+V_{out} * \frac{2}{g_0} = (V_{in-} + V_m - V_a)g_m +  \frac{V_{a}}{g_0}
+\end{equation}
+
+\begin{equation}
+V_{out} = \frac{(V_{in-} + V_m - V_a)g_m}{2} +  \frac{V_{a}}{2}
+\end{equation}
+
+
+
+\begin{equation}
+V_{m} = (\frac{-V_{out}}{g_0} + V_{in-}g_m) * \frac{1}{\frac{1}{g_0} - g_m + 2g_m^2g_0}
+\end{equation}
+
+\begin{equation}
+V_{a} = V_m + V_{out} + 2(g_m)(V_m)(g_0)
+\end{equation}
+
+\begin{equation}
+V_{a} = V_{out} + V_m( 1+ 2(g_m)(g_0))
+\end{equation}
+
+
+Now replace all $V_a$ in the VOUT equation.
+
+\begin{equation}
+V_{out} = \frac{(V_{in-} + V_m - V_m + V_{out} + 2(g_m)(V_m)(g_0))g_m}{2} +  \frac{V_m + V_{out} + 2(g_m)(V_m)(g_0)}{2}
+\end{equation}
+
+\begin{equation}
+V_{out} (\frac{1}{g_0} - \frac{1}{g_0})  = \frac{-V_a }{g_0} + V_{in-}g_m - (V_m) gm
+\end{equation}
+
 
 \subsubsection*{b)}
 Solve these equations by hand for \(V_{OUT}\). If you do not have a solution at
@@ -91,24 +139,69 @@ Simplify the solution obtained with MATLAB under the assumption that all \(g_o\)
 
 \subsection*{Problem 3}
 A transresistance amplifier with a gain \(R_T\) is shown. Derive an expression
-for the voltage gain of the amplifier as a function of the transresistance gain \(R_T\) and determine what that reduces to if \(R_T\) is very large.
+for the voltage gain of the amplifier as a function of the transresistance gain \(R_T\) and determine what that reduces to if \(R_T\) is very large.\\
 \includegraphics[width=6in]{images/Problem3.png} \\
 
 
-In this circuit we are using a transresistance amplifier which has a gain of $V_{out} = R_f * i_{in}$. The $i_{in}$ for this circuit is $\frac{V_{in}}{R_1}$ because $V_{neg}$ is a virtual ground. We can then do a KVL.
+In this circuit we are using a transresistance amplifier which has a gain of $V_{out} = R_f * i_{in}$. The $i_{in}$ for this circuit is $\frac{V_{in}}{R_1}$ because $V_{neg}$ is a virtual ground. We can then do a KVL. 
+\begin{equation}
+\frac{V_{in}}{R_1} + \frac{V_{out}}{R_2} - i_{in}= 0
+\end{equation}
 
 \begin{equation}
-\label{eq:trans}
-
+\frac{V_{in}}{R_1} + \frac{V_{out}}{R_2} - \frac{V_{out}}(R_f)= 0
 \end{equation}
+
+\begin{equation}
+\frac{V_{in}}{R_1} =  V_{out}  * \frac{R_2 -R_f}{R_2*R_f}
+\end{equation}
+
+\begin{equation}
+\frac{V_{out}}{V_{in}} =  \frac{R_2*R_f}{R_1(R_2 -R_f)}
+\end{equation}
+
+
+
+\begin{equation}
+lim_{R_f \to \infty} \frac{R_2*R_f}{R_1(R_2 -R_f)} = \frac{R_2}{R_1}
+\end{equation}
+	
 
 \subsection*{Problem 4}
 Assume the amplifier shown below is designed in a 0.18$\mu$ CMOS process.
-Assume also that \(V_{DD} = 1V\), \(V_{SS} = -1V\), and \(I_{DQ} = 4mA\).
+Assume also that \(V_{DD} = 1V\), \(V_{SS} = -1V\), and \(I_{DQ} = 4mA\).\\
+\includegraphics[width=6in]{images/Problem4.png} \\
 
 \subsubsection*{a)}
 Analytically determine the \(W\) and \(L\) needed to establish a quiescent output
-voltage of 0.5V when \(V_{INQ} = 0.5V\).
+voltage of 0.5V when \(V_{INQ} = 0.5V\).\\
+
+\includegraphics[width=4in]{images/Problem4.png} \\
+
+Since we are using a mosfet in linear (non saturation region. We can use the following equations:
+
+\begin{equation}
+i_{d} = K * (2(V_{SG} - V_{TP}) V_{SD} - V_{SD}^2)
+\end{equation}
+Where
+\begin{equation}
+K =\frac{1}{2}(\mu_n C_{ox})\frac{W}{L}
+\end{equation}
+
+
+\begin{equation}
+V_{out} = V_{DS}  = 0.5 V
+\end{equation}
+
+\begin{equation}
+V_{in} = V_{GS} = 0.5 V
+\end{equation}
+
+
+\begin{equation}
+i_{d} = K * (2(-0.5 - V_{TP})(-0.5V) - (0.5V)^2)
+\end{equation}
+
 
 \subsubsection*{b)}
 Verify the transfer characteristics by Spice simulation.
@@ -124,7 +217,10 @@ quiescent output voltage.
 Design a 5T op amp to have a dc gain of 50dB and a GB of 2MHz
 in the ON 0.5$\mu$m CMOS process. Assume \(V_{DD} = 3.5V\) and \(C_L = 1pF\).
 Assume also that the bias voltages \(V_{B1}\) and \(V_{B2}\) can be precisely set so that a CMFB circuit is not needed.
-Verify the gain and the GB of your design with a SPICE simulation.
+Verify the gain and the GB of your design with a SPICE simulation.\\
+\includegraphics[width=6in]{images/Problem5.png} \\
+
+
 
 \subsection*{Problem 7}
 Determine the common-mode input range and the output signal swing of
@@ -136,6 +232,7 @@ expression \(A(s) = \frac{A_{GB}}{1 + \frac{s}{\omega_A}}\), where the gain-band
 \(\omega_A A_{GB} = \omega\). Assuming that the frequency-dependent gain of the op amp can be modeled as
 \(GBA(s) = \frac{A_{GB}}{s}\), determine the transfer function
 \(\frac{V_{OUT}}{V_{IN}}\) for the following two amplifiers.
+\includegraphics[width=6in]{images/Problem8.png} \\
 
 \subsubsection*{a)}
 \[
@@ -160,7 +257,8 @@ It was stated in class that all even-ordered distortion terms introduced by
 the amplifier vanish in symmetric fully differential amplifiers. Prove this fact.
 
 \subsection*{Problem 10 (Extra Credit)}
-The “dead network” of a circuit is obtained by setting all small-signal inputs to 0. That is, by replacing all ac voltage sources with short circuits and all ac current sources with open circuits. The $\beta$ of a feedback amplifier is a characteristic of the “dead network”. Consider the basic inverting and noninverting feedback amplifiers shown below. These are widely used as small-signal voltage amplifiers.
+The “dead network” of a circuit is obtained by setting all small-signal inputs to 0. That is, by replacing all ac voltage sources with short circuits and all ac current sources with open circuits. The $\beta$ of a feedback amplifier is a characteristic of the “dead network”. Consider the basic inverting and noninverting feedback amplifiers shown below. These are widely used as small-signal voltage amplifiers.\\
+\includegraphics[width=6in]{images/Problem10.png} \\
 
 \subsubsection*{a)}
 Show that they both have the same “dead network”.
