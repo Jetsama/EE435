@@ -56,7 +56,6 @@
     \setcounter{equation}{0}%
     \oldsubsection%
 }
-
 \begin{document}
 
 
@@ -82,6 +81,15 @@ Write a complete set of small-signal equations that can be solved to obtain
 \includegraphics[width=3in]{images/p1p1.png} \\
 \includegraphics[width=3in]{images/p1p2.png} \\
 \includegraphics[width=3in]{images/p1p3.png} \\
+
+
+
+
+\subsubsection*{b)}
+Solve these equations by hand for \(V_{OUT}\). If you do not have a solution at
+the end of ½ hour, stop, and comment on your progress and the amount of
+effort that you believe would be required to finish the solution.
+
 
 \begin{equation}
 \frac{V_{out}}{g_0} + (V_m) gm = \frac{V_{out} - V_a }{g_0} + V_{in-}g_m 
@@ -116,18 +124,15 @@ V_{a} = V_{out} + V_m( 1+ 2(g_m)(g_0))
 Now replace all $V_a$ in the VOUT equation.
 
 \begin{equation}
-V_{out} = \frac{(V_{in-} + V_m - V_m + V_{out} + 2(g_m)(V_m)(g_0))g_m}{2} +  \frac{V_m + V_{out} + 2(g_m)(V_m)(g_0)}{2}
+V_{out} = \frac{(V_{in-} + V_{out} - 2(g_m)(V_m)(g_0))g_m}{2} +  \frac{V_m + V_{out} + 2(g_m)(V_m)(g_0)}{2}
 \end{equation}
+Now replace all $V_m$ in the  equation.
+\begin{multline}
+V_{out} = \frac{(V_{in-} + V_{out} - 2(g_m)((\frac{-V_{out}}{g_0} + V_{in-}g_m) * \frac{1}{\frac{1}{g_0} - g_m + 2g_m^2g_0})(g_0))g_m}{2}\\ +  \frac{(\frac{-V_{out}}{g_0} + V_{in-}g_m) * \frac{1}{\frac{1}{g_0} - g_m + 2g_m^2g_0} + V_{out} + 2(g_m)((\frac{-V_{out}}{g_0} + V_{in-}g_m) * \frac{1}{\frac{1}{g_0} - g_m + 2g_m^2g_0})(g_0)}{2}
+\end{multline}
 
-\begin{equation}
-V_{out} (\frac{1}{g_0} - \frac{1}{g_0})  = \frac{-V_a }{g_0} + V_{in-}g_m - (V_m) gm
-\end{equation}
 
 
-\subsubsection*{b)}
-Solve these equations by hand for \(V_{OUT}\). If you do not have a solution at
-the end of ½ hour, stop, and comment on your progress and the amount of
-effort that you believe would be required to finish the solution.
 
 \subsubsection*{c)}
 Obtain a parametric (symbolic) solution for the transfer function \(V_{OUT}/V_{IN}\)
