@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.20)  31 JAN 2024 01:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.5)  31 JAN 2024 09:51
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **./HW2.tex
 (HW2.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-03-30>
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -23,17 +23,17 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks17
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count193
@@ -47,27 +47,27 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutheight=\dimen146
 \Gm@layouthoffset=\dimen147
 \Gm@layoutvoffset=\dimen148
-\Gm@dimlist=\toks17
+\Gm@dimlist=\toks18
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
-) (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2022/04/08 v2.17n AMS math features
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
+\@emptytoks=\toks19
 \ex@=\dimen149
 ))
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen150
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count196
@@ -100,38 +100,39 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \dotsspace@=\muskip16
 \c@parentequation=\count269
 \dspbrk@lvl=\count270
-\tag@help=\toks19
+\tag@help=\toks20
 \row@=\count271
 \column@=\count272
 \maxfields@=\count273
-\andhelp@=\toks20
+\andhelp@=\toks21
 \eqnshift@=\dimen152
 \alignsep@=\dimen153
 \tagshift@=\dimen154
 \tagwidth@=\dimen155
 \totwidth@=\dimen156
 \lineht@=\dimen157
-\@envbody=\toks21
+\@envbody=\toks22
 \multlinegap=\skip51
 \multlinetaggap=\skip52
-\mathdisplay@stack=\toks22
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+)
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.st
-y
+)
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count274
 \lst@gtempboxa=\box53
-\lst@token=\toks23
+\lst@token=\toks24
 \lst@length=\count275
 \lst@currlwidth=\dimen158
 \lst@column=\count276
@@ -141,36 +142,35 @@ y
 \lst@newlines=\count278
 \lst@lineno=\count279
 \lst@maxwidth=\dimen161
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 \c@lstnumber=\count280
 \lst@skipnumbers=\count281
 \lst@framebox=\box54
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
- (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
-f
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx
-))
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+) (C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-) (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
-Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+) (C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \c@tracingmulticols=\count282
 \mult@box=\box55
 \multicol@leftmargin=\dimen162
@@ -187,12 +187,12 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \multicolbaselineskip=\skip54
 \partial@page=\box56
 \last@line=\box57
+\mc@boxedresult=\box58
 \maxbalancingoverflow=\dimen167
-\mult@rightbox=\box58
-\mult@grightbox=\box59
-\mult@firstbox=\box60
-\mult@gfirstbox=\box61
-\@tempa=\box62
+\mult@rightbox=\box59
+\mult@grightbox=\box60
+\mult@firstbox=\box61
+\mult@gfirstbox=\box62
 \@tempa=\box63
 \@tempa=\box64
 \@tempa=\box65
@@ -228,27 +228,28 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box95
 \@tempa=\box96
 \@tempa=\box97
+\@tempa=\box98
 \c@minrows=\count288
 \c@columnbadness=\count289
 \c@finalcolumnbadness=\count290
 \last@try=\dimen168
 \multicolovershoot=\dimen169
 \multicolundershoot=\dimen170
-\mult@nat@firstbox=\box98
-\colbreak@box=\box99
+\mult@nat@firstbox=\box99
+\colbreak@box=\box100
 \mc@col@check@num=\count291
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
-cfg
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
@@ -256,41 +257,38 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.
-sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.s
+ty
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
-sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+) (C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
-ekeys.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
-y
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.st
-y
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
-s.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
-base.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
@@ -299,8 +297,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
-cfg
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )))
 Package grfext Info: Graphics extension search list:
@@ -308,130 +306,132 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps,.gif]
 (grfext)             \AppendGraphicsExtensions on input line 45.
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+)
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count292
-\float@exts=\toks24
-\float@box=\box100
-\@float@everytoks=\toks25
-\@floatcapt=\box101
+\float@exts=\toks25
+\float@box=\box101
+\@float@everytoks=\toks26
+\@floatcapt=\box102
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
-sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacr
-o.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
-Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-08-07 v2.53 Cross-referencing by name of section
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
-tlestring.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count293
 )
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+)
 \@linkdim=\dimen173
-\Hy@linkcounter=\count294
-\Hy@pagecounter=\count295
+\Hy@linkcounter=\count295
+\Hy@pagecounter=\count296
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.st
-y
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count296
- (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count297
+
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4060.
-Package hyperref Info: Hyper figures OFF on input line 4177.
-Package hyperref Info: Link nesting OFF on input line 4182.
-Package hyperref Info: Hyper index ON on input line 4185.
-Package hyperref Info: Plain pages OFF on input line 4192.
-Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Option `unicode' set `true' on input line 4050.
+Package hyperref Info: Hyper figures OFF on input line 4167.
+Package hyperref Info: Link nesting OFF on input line 4172.
+Package hyperref Info: Hyper index ON on input line 4175.
+Package hyperref Info: Plain pages OFF on input line 4182.
+Package hyperref Info: Backreferencing OFF on input line 4187.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count297
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+Package hyperref Info: Bookmarks ON on input line 4434.
+\c@Hy@tempcnt=\count298
+
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
+LaTeX Info: Redefining \url on input line 4772.
 \XeTeXLinkMargin=\dimen174
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
-c.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count298
+\Fld@menulength=\count299
 \Field@Width=\dimen175
 \Fld@charsize=\dimen176
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
+Package hyperref Info: Hyper figures OFF on input line 6051.
+Package hyperref Info: Link nesting OFF on input line 6056.
+Package hyperref Info: Hyper index ON on input line 6059.
+Package hyperref Info: backreferencing OFF on input line 6066.
+Package hyperref Info: Link coloring OFF on input line 6071.
+Package hyperref Info: Link coloring with OCG OFF on input line 6076.
+Package hyperref Info: PDF/A mode OFF on input line 6081.
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count299
-\c@Item=\count300
-\c@Hfootnote=\count301
+\Hy@abspage=\count300
+\c@Item=\count301
+\c@Hfootnote=\count302
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2023-07-08 v7.01b Hyperref driver for pdfTeX
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count302
-\c@bookmark@seq@number=\count303
+\Fld@listcount=\count303
+\c@bookmark@seq@number=\count304
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
-lecheck.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
-counter.sty
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -439,11 +439,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip55
 )
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
-ftex.def
-File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count304
-\l__pdf_internal_box=\box102
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count305
+\l__pdf_internal_box=\box103
 ) (HW2.aux)
 \openout1 = `HW2.aux'.
 
@@ -500,22 +500,22 @@ LaTeX Font Info:    ... okay on input line 59.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count305
+\c@lstlisting=\count306
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
-kii
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count306
+\scratchcounter=\count307
 \scratchdimen=\dimen177
-\scratchbox=\box103
-\nofMPsegments=\count307
-\nofMParguments=\count308
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count309
+\scratchbox=\box104
+\nofMPsegments=\count308
+\nofMParguments=\count309
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count310
 \MPscratchDim=\dimen178
-\MPnumerator=\count310
-\makeMPintoPDFobject=\count311
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
+\everyMPtoPDFconversion=\toks28
 )
 Package hyperref Info: Link coloring OFF on input line 59.
  (HW2.out) (HW2.out)
@@ -534,13 +534,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
 
 
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(C:\Users\Jonat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \hbox (badness 10000) in paragraph at lines 77--79
@@ -564,8 +564,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
 [1
 
-{C:/Users/Jetsan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/Pr
-oblem1.png> <./images/p1p1.png>]
+{C:/Users/Jonat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/Pro
+blem1.png> <./images/p1p1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
@@ -1086,62 +1086,377 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
                    \relax 
 l.330 \begin{equation}
                       
+Underfull \hbox (badness 10000) in paragraph at lines 341--344
+
+ []
+
 <images/Problem8.png, id=110, 501.37312pt x 377.15906pt>
 File: images/Problem8.png Graphic file (type png)
 <use images/Problem8.png>
-Package pdftex.def Info: images/Problem8.png  used on input line 346.
+Package pdftex.def Info: images/Problem8.png  used on input line 349.
 (pdftex.def)             Requested size: 433.62pt x 326.20932pt.
 
-Overfull \hbox (27.5334pt too wide) in paragraph at lines 341--347
-\OT1/cmr/m/n/10 am-pli-fiers. [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--347
+Underfull \hbox (badness 10000) in paragraph at lines 346--350
 
  []
 
-[9 <./images/5TOpampPractical.png>] [10 <./images/Problem8.png>]
-<images/Problem10.png, id=127, 331.2375pt x 258.9675pt>
+[9 <./images/5TOpampPractical.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.361 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.361 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.361 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.361 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.364 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.364 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.364 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.364 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.371 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.371 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.371 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.371 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.375 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.375 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.375 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.375 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.6}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.378 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.6}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.378 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.6}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.378 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.6}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.378 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.7}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.7}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.7}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.7}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \begin{equation}
+                       [10 <./images/Problem8.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.386 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.386 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.386 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.386 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.392 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.392 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.392 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.392 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.10
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.395 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.10
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.395 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.10
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.395 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.10
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.395 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.398 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.398 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.398 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.398 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.12
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.402 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.12
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.402 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.12
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.402 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.12
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.402 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.13
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.406 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.13
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.406 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.13
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.406 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.13
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.406 \begin{equation}
+                      
+<images/Problem10.png, id=124, 331.2375pt x 258.9675pt>
 File: images/Problem10.png Graphic file (type png)
 <use images/Problem10.png>
-Package pdftex.def Info: images/Problem10.png  used on input line 372.
+Package pdftex.def Info: images/Problem10.png  used on input line 429.
 (pdftex.def)             Requested size: 433.62pt x 339.0286pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--373
+Underfull \hbox (badness 10000) in paragraph at lines 428--430
 
  []
 
-[11 <./images/Problem10.png>] [12] (HW2.aux)
+[11] [12 <./images/Problem10.png>] [13] (HW2.aux)
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+ ***********
 Package rerunfilecheck Info: File `HW2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12088 strings out of 476331
- 188116 string characters out of 5787293
- 1892660 words of memory out of 5000000
- 32293 multiletter control sequences out of 15000+600000
- 515999 words of font info for 47 fonts, out of 8000000 for 9000
+ 12280 strings out of 475247
+ 186988 string characters out of 5757793
+ 1960801 words of memory out of 5000000
+ 33588 multiletter control sequences out of 15000+600000
+ 561781 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,9n,67p,456b,1197s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Jetsan\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
-m1000.pk><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmbx10.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Jetsan/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Jetsan/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Jetsan/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jet
-san/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
-Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.
-pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on HW2.pdf (12 pages, 500107 bytes).
+ 63i,9n,67p,456b,1199s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Jonat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk><C:/Users/Jonat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/Jonat/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/Jonat/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Jonat/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Jonat/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Jonat/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jonat/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Jo
+nat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/U
+sers/Jonat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pf
+b><C:/Users/Jonat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Users/Jonat/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb><C:/Users/Jonat/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmtt9.pfb>
+Output written on HW2.pdf (13 pages, 504461 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
+ 216 PDF objects out of 1000 (max. 8388607)
  66 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

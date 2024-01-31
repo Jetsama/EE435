@@ -339,27 +339,84 @@ the amplifier you designed in the previous problem.
 
 \subsection*{Problem 8}
 Assume that the op amp is a single-pole amplifier with gain given by the
-expression \(A(s) = \frac{A_{GB}}{1 + \frac{s}{\omega_A}}\), where the gain-bandwidth product of the op amp is
-\(\omega_A A_{GB} = \omega\). Assuming that the frequency-dependent gain of the op amp can be modeled as
-\(GBA(s) = \frac{A_{GB}}{s}\), determine the transfer function
-\(\frac{V_{OUT}}{V_{IN}}\) for the following two amplifiers.
-\includegraphics[width=6in]{images/Problem8.png} \\
+expression \(A(s) = \frac{A_{0} \omega_A}{s + \omega_A} \approx \frac{GB}{s}\), where the gain-bandwidth product of the op amp is
+\(GB = A_0\omega_A\). The right-most approximation to the gain is almost always justifiable whenused to characterize the operational amplifier since the gain of the op amp is so large at dc and since at frequencies even modestly above $/omega_A$, there is little difference between the middle term and the right term in this expression.\\
 
 \subsubsection*{a)}
+Assuming that the frequency-dependent gain of the op amp can be modeled as
+\(A(s) \approx \frac{A_{GB}}{s}\), determine the transfer function
+\(\frac{V_{OUT}}{V_{IN}}\) for the following two amplifiers.\\
+\includegraphics[width=6in]{images/Problem8.png} \\
+
+
+
+
 \[
 \frac{V_{OUT}}{V_{IN}} = \frac{A_{GB}}{s} \times \frac{1}{1 + \frac{1}{2}s}
 \]
 
-\subsubsection*{b)}
-\[
-\frac{V_{OUT}}{V_{IN}} = \frac{A_{GB}}{s} \times \frac{1}{1 + \frac{1}{10}s}
-\]
 
-\subsubsection*{c)}
+
+First for the first circuit we start with the following equations.
+\begin{equation}
+V_{out} = A(s)(V_{in} - V_N)
+\end{equation}
+\begin{equation}
+V_N = \frac{V_{OUT}*R1}{R_1 + R_2}
+\end{equation}
+Then we can solve using the VN equation to replace VN in the original.
+\begin{equation}
+V_{out} = A(s)(V_{in} - \frac{V_{OUT}*R1}{R_1 + R_2})
+\end{equation}
+\begin{equation}
+V_{out}(1 + \frac{R_1 * A(s)}{R_2 + R_1} = A(s)V_{in} 
+\end{equation}
+
+\begin{equation}
+\frac{V_{out}}{V_{in}} = \frac{A(s)}{1+\frac{R_1 * A(s)}{R_2 + R_1}} 
+\end{equation}
+\begin{equation}
+\frac{V_{out}}{V_{in}} = \frac{A(s)(R_1 + R_2)}{(R_1 + R_2) + R_1 * A(s)} 
+\end{equation}
+Now replace A(s)!
+\begin{equation}
+\frac{V_{out}}{V_{in}} = \frac{\frac{A_{GB}}{s}(R_1 + R_2)}{(R_1 + R_2) + R_1 * \frac{A_{GB}}{s}} 
+\end{equation}
+
+\begin{equation}
+\frac{V_{out}}{V_{in}} = \frac{A_{GB}(R_1 + R_2)}{s(R_1 + R_2) + R_1 * A_{GB}} 
+\end{equation}
+
+
+Now for the second circuit we do a similar analysis.
+\begin{equation}
+V_{out} = A(s)(V_P - V_1)
+\end{equation}
+\begin{equation}
+V_P = 0
+\end{equation}
+\begin{equation}
+V_1 = Vout - \frac{(V_{out} - V_{in})R_2}{R_1+R_2}
+\end{equation}
+
+\begin{equation}
+V_1 = Vin - \frac{(V_{in} - V_{out})R_1}{R_1+R_2}
+\end{equation}
+
+\begin{equation}
+Vout - \frac{(V_{out} - V_{in})R_2}{R_1+R_2} = Vin - \frac{(V_{in} - V_{out})R_1}{R_1+R_2}
+\end{equation}
+The vout and VN
+
+
+
+\subsubsection*{b)}
 With the same op amp model used in part a), analytically determine the 3dB
 bandwidth of the following two amplifiers.
 
-\subsubsection*{d)}
+
+
+\subsubsection*{c)}
 Derive the gain of the inverting feedback amplifier in terms of \(A_{V}\) and \(\beta\) and
 comment on why it does not look like the standard feedback equation.
 
