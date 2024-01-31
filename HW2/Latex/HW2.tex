@@ -80,17 +80,24 @@ Write a complete set of small-signal equations that can be solved to obtain
 
 \includegraphics[width=3in]{images/p1p1.png} \\
 \includegraphics[width=3in]{images/p1p2.png} \\
-\includegraphics[width=3in]{images/p1p3.png} \\
 
+Three equations are created via KCL analysis of the small signal model. They are as follows:\\
 
+\[(V_{\text{out}} - V_{a}) \cdot g_0 + V_{\text{out}} \cdot g_0 + (V_{\text{inN}} - V_{a}) \cdot g_m + V_m \cdot g_m = 0\]
 
+\[(V_m - V_{a}) \cdot g_0 + V_m \cdot g_0 + (V_{\text{inP}} - V_{a}) \cdot g_m + V_m \cdot g_m = 0\]
+
+\[V_a \cdot g_0 + (V_a - V_m) \cdot g_0 + (V_a - V_{\text{out}}) \cdot g_0 - (V_{\text{inP}} - V_{a}) \cdot g_m - (V_{\text{inN}} - V_{a}) \cdot g_m = 0\]
 
 \subsubsection*{b)}
 Solve these equations by hand for \(V_{OUT}\). If you do not have a solution at
 the end of ½ hour, stop, and comment on your progress and the amount of
-effort that you believe would be required to finish the solution.
+effort that you believe would be required to finish the solution.\\
 
+\textbf{INCORRECT}\\
+NOTE: this is attempt was incorrect because I used go as resistance rather than conductance
 
+\includegraphics[width=3in]{images/p1p3.png} \\
 \begin{equation}
 \frac{V_{out}}{g_0} + (V_m) gm = \frac{V_{out} - V_a }{g_0} + V_{in-}g_m 
 \end{equation}
@@ -130,17 +137,55 @@ Now replace all $V_m$ in the  equation.
 \begin{multline}
 V_{out} = \frac{(V_{in-} + V_{out} - 2(g_m)((\frac{-V_{out}}{g_0} + V_{in-}g_m) * \frac{1}{\frac{1}{g_0} - g_m + 2g_m^2g_0})(g_0))g_m}{2}\\ +  \frac{(\frac{-V_{out}}{g_0} + V_{in-}g_m) * \frac{1}{\frac{1}{g_0} - g_m + 2g_m^2g_0} + V_{out} + 2(g_m)((\frac{-V_{out}}{g_0} + V_{in-}g_m) * \frac{1}{\frac{1}{g_0} - g_m + 2g_m^2g_0})(g_0)}{2}
 \end{multline}
-
+At this point I spent way to much time on this problem. So I moved onto part c. I then realized that I was using g0 as a resistance rather than conductance.\\
+\textbf{CORRECTED}\\
 
 
 
 \subsubsection*{c)}
 Obtain a parametric (symbolic) solution for the transfer function \(V_{OUT}/V_{IN}\)
 from this set of equations with MATLAB. How many total product terms appear in this
-solution? In this part, \(V_{IN} = V_{IN+} - V_{IN-}\).
+solution? In this part, \(V_{IN} = V_{IN+} - V_{IN-}\).\\
+
+\begin{lstlisting}
+syms Vm Va Vout go gm Vin VinN VinP
+
+eq1 = (Vout-Va)*go + Vout*go + (VinN-Va)*gm +Vm*gm  == 0;
+eq2 = (Vm-Va)*go + Vm*go + (VinP-Va)*gm +Vm*gm  == 0;
+eq3 = Va*go + (Va-Vm)*go +(Va-Vout)*go - (VinP-Va)*gm - (VinN-Va)*gm == 0;
+eq4 = Vin == VinP-VinN;
+
+out = solve([eq1,eq2,eq3,eq4], [Vout,Vm,VinP,VinN,Va])
+out.Vout
+
+\end{lstlisting}
+\begin{lstlisting}
+
+ans =
+ 
+(2*Vin*gm^2 + Vin*go*gm)/(4*go*(gm + go))\end{lstlisting}
+
+
+\begin{equation}
+\frac{V_{out}}{V_{in}} = \frac{(2 * g_m^2) + (g_m g_0) }{4 g_0 (g_m + g_0)}
+\end{equation}
 
 \subsubsection*{d)}
-Simplify the solution obtained with MATLAB under the assumption that all \(g_o\) terms are small compared to \(g_m\) terms.
+Simplify the solution obtained with MATLAB under the assumption that all \(g_o\) terms are small compared to \(g_m\) terms.\\
+
+\begin{equation}
+\frac{V_{out}}{V_{in}} =\frac{g_m}{2 g_0}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
 
 \subsection*{Problem 3}
 A transresistance amplifier with a gain \(R_T\) is shown. Derive an expression
@@ -171,22 +216,28 @@ In this circuit we are using a transresistance amplifier which has a gain of $V_
 lim_{R_f \to \infty} \frac{R_2*R_f}{R_1(R_2 -R_f)} = \frac{R_2}{R_1}
 \end{equation}
 	
+	
+	
+	
+	
+	
+	
+	
+	
 
 \subsection*{Problem 4}
 Assume the amplifier shown below is designed in a 0.18$\mu$ CMOS process.
 Assume also that \(V_{DD} = 1V\), \(V_{SS} = -1V\), and \(I_{DQ} = 4mA\).\\
-\includegraphics[width=6in]{images/Problem4.png} \\
+\includegraphics[width=3in]{images/Problem4.png} \\
 
 \subsubsection*{a)}
 Analytically determine the \(W\) and \(L\) needed to establish a quiescent output
 voltage of 0.5V when \(V_{INQ} = 0.5V\).\\
 
-\includegraphics[width=4in]{images/Problem4.png} \\
-
-Since we are using a mosfet in linear (non saturation region. We can use the following equations:
+Since we are using a mosfet in linear (non saturation region), we can use the following equations:
 
 \begin{equation}
-i_{d} = K * (2(V_{SG} - V_{TP}) V_{SD} - V_{SD}^2)
+i_{d} = K * (2(V_{GS} - V_{TN}) V_{DS} - V_{DS}^2)
 \end{equation}
 Where
 \begin{equation}
@@ -195,17 +246,56 @@ K =\frac{1}{2}(\mu_n C_{ox})\frac{W}{L}
 
 
 \begin{equation}
-V_{out} = V_{DS}  = 0.5 V
+V_{out} = V_{DS} - V_{SS}  = 0.5 V
 \end{equation}
 
 \begin{equation}
-V_{in} = V_{GS} = 0.5 V
+V_{DS} = 1.5 V
 \end{equation}
-
 
 \begin{equation}
-i_{d} = K * (2(-0.5 - V_{TP})(-0.5V) - (0.5V)^2)
+V_{in} = V_{GS} - V_{SS} = 0.5 V
 \end{equation}
+\begin{equation}
+V_{GS} = 1.5 V
+\end{equation}
+
+To get the W/L we can use the current:
+
+\begin{equation}
+i_{d} = K * (2(V_{GS} - V_{TN}) V_{DS} - V_{DS}^2)	
+\end{equation}
+To get the VTN, I used the reference sheet for the process. 
+\begin{equation}
+V_{TN} =  0.5V
+\end{equation}
+
+
+The output current of the amplifier is:
+\begin{equation}
+i_{d} = 4mA = K * (2(1.5 -0.5)(1.5V) - (1.5V)^2)
+\end{equation}
+
+\begin{equation}
+i_{d} = 4mA = K * (2(1)(1.5V) - (1.5V)^2)
+\end{equation}
+
+\begin{equation}
+4mA = K * (3 - 2.25)V
+\end{equation}
+
+\begin{equation}
+4*10^{-3} A = K * 0.75V
+\end{equation}
+
+\begin{equation}
+\frac{16}{3}*10^{-3} = K = \frac{1}{2}(\mu_n C_{ox})\frac{W}{L} = 171.8 \frac{uA}{V^2} \frac{W}{L}
+\end{equation}
+
+\begin{equation}
+\frac{W}{L} = \frac{80000}{2577} \approx 31.04
+\end{equation}
+
 
 
 \subsubsection*{b)}
@@ -223,7 +313,23 @@ Design a 5T op amp to have a dc gain of 50dB and a GB of 2MHz
 in the ON 0.5$\mu$m CMOS process. Assume \(V_{DD} = 3.5V\) and \(C_L = 1pF\).
 Assume also that the bias voltages \(V_{B1}\) and \(V_{B2}\) can be precisely set so that a CMFB circuit is not needed.
 Verify the gain and the GB of your design with a SPICE simulation.\\
-\includegraphics[width=6in]{images/Problem5.png} \\
+\includegraphics[width=4in]{images/Problem5.png} \\
+
+We can use the equations given in the lecture slides.\\
+\includegraphics[width=4in]{images/5TOpamp.png} \\
+\includegraphics[width=4in]{images/5TOpampPractical.png} \\
+
+First convert the $50dB = 10 log(\frac{V_{out}}{V_{in}})$. We then get that $A = 10^5$.
+
+
+\begin{equation}
+A = \frac{1}{\lambda_1 + \lambda_2} \frac{1}{V_{EB1}} = 10^5 =
+\end{equation}
+
+
+\begin{equation}
+g_{mn} = (\mu_n C_{ox})\frac{W}{L} = 57.8*2 \frac{W}{L}
+\end{equation}
 
 
 
@@ -284,4 +390,18 @@ that derived in EE 230 for the gain of the noninverting feedback amplifier.
 Derive the gain of the inverting feedback amplifier in terms of \(A_V\) and \(\beta\) and
 comment on why it does not look like the standard feedback equation.
 
+
+
+
+http://class.ece.iastate.edu/ee435/miscHandouts/TSMC%200.18%20T48K.pdf
+
+http://class.ece.iastate.edu/ee330/lectures/EE%20330%20Lect%2025%20Fall%202023.pdf
+
 \end{document}
+
+
+
+
+
+
+

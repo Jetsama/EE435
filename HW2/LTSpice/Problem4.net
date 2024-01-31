@@ -1,0 +1,14 @@
+* C:\Git\EE435\HW2\LTSpice\Problem4.asc
+V1 N002 0 .5V
+V2 N004 0 -1V
+V3 N001 0 1V
+I1 N001 VOUT 4mA
+M1 VOUT N002 N004 N003 TSMC180nmN l=1u w=30u pd=100u
+R1 VOUT 0 10e9
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Jetsan\AppData\Local\LTspice\lib\cmp\standard.mos
+.tran 1000s uic
+.include CMOSNNMOS.txt
+.backanno
+.end

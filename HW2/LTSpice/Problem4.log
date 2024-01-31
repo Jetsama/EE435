@@ -1,0 +1,27 @@
+Stray ".ends" card: .ends
+Circuit: * C:\Git\EE435\HW2\LTSpice\Problem4.asc
+
+WARNING: Node N003 is floating.
+
+WARNING: Less than two connections to node n003.  This node is used by m1.
+Warning: Ps = 0 is less than W.
+Per .tran options, skipping operating point for transient analysis.
+
+Date: Wed Jan 31 01:43:52 2024
+Total elapsed time: 0.088 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2179
+traniter = 2179
+tranpoints = 1076
+accept = 1075
+rejected = 1
+matrix size = 8
+fillins = 0
+solver = Normal
+Avg thread counts: 3.7/6.5/6.5/3.7
+Matrix Compiler1:      17 opcodes  0.1/[0.1]/0.1
+Matrix Compiler2: 542 bytes object code size  0.1/0.1/[0.1]
+
