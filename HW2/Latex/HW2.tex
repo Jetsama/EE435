@@ -234,10 +234,10 @@ Assume also that \(V_{DD} = 1V\), \(V_{SS} = -1V\), and \(I_{DQ} = 4mA\).\\
 Analytically determine the \(W\) and \(L\) needed to establish a quiescent output
 voltage of 0.5V when \(V_{INQ} = 0.5V\).\\
 
-Since we are using a mosfet in linear (non saturation region), we can use the following equations:
+Since we are using a mosfet in saturation region, we can use the following equations:
 
 \begin{equation}
-i_{d} = K * (2(V_{GS} - V_{TN}) V_{DS} - V_{DS}^2)
+i_{d} =\frac{K}{2} * (V_{GS} - V_{TN})^2
 \end{equation}
 Where
 \begin{equation}
@@ -256,6 +256,7 @@ V_{DS} = 1.5 V
 \begin{equation}
 V_{in} = V_{GS} - V_{SS} = 0.5 V
 \end{equation}
+
 \begin{equation}
 V_{GS} = 1.5 V
 \end{equation}
@@ -263,8 +264,10 @@ V_{GS} = 1.5 V
 To get the W/L we can use the current:
 
 \begin{equation}
-i_{d} = K * (2(V_{GS} - V_{TN}) V_{DS} - V_{DS}^2)	
+i_{d} = K * (V_{GS} - V_{TN})^2
 \end{equation}
+
+
 To get the VTN, I used the reference sheet for the process. 
 \begin{equation}
 V_{TN} =  0.5V
@@ -273,11 +276,11 @@ V_{TN} =  0.5V
 
 The output current of the amplifier is:
 \begin{equation}
-i_{d} = 4mA = K * (2(1.5 -0.5)(1.5V) - (1.5V)^2)
+i_{d} = 4mA = K * (1.5 - 0.5)^2
 \end{equation}
 
 \begin{equation}
-i_{d} = 4mA = K * (2(1)(1.5V) - (1.5V)^2)
+i_{d} = 4mA = \frac{K}{2}
 \end{equation}
 
 \begin{equation}
@@ -396,15 +399,15 @@ V_{out} = A(s)(V_P - V_1)
 V_P = 0
 \end{equation}
 \begin{equation}
-V_1 = Vout - \frac{(V_{out} - V_{in})R_2}{R_1+R_2}
+\frac{(V_{in} - V_{1})}{R_1} = \frac{(V_{1} - V_{out})}{R_2}
 \end{equation}
 
 \begin{equation}
-V_1 = Vin - \frac{(V_{in} - V_{out})R_1}{R_1+R_2}
+\frac{V_{in}}{R_1} = -(\frac{\frac{V_{out}}{A} - 1}{R_2} + \frac{\frac{V_{out}}{A}}{R_1})
 \end{equation}
 
 \begin{equation}
-Vout - \frac{(V_{out} - V_{in})R_2}{R_1+R_2} = Vin - \frac{(V_{in} - V_{out})R_1}{R_1+R_2}
+\frac{V_{out}}{V_{in}} = \frac{-(R_2)(A)}{R_1(A) + R_1 + R_2}
 \end{equation}
 The vout and VN
 
