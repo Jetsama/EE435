@@ -237,7 +237,7 @@ voltage of 0.5V when \(V_{INQ} = 0.5V\).\\
 Since we are using a mosfet in saturation region, we can use the following equations:
 
 \begin{equation}
-i_{d} =\frac{K}{2} * (V_{GS} - V_{TN})^2
+i_{d} =K * (V_{GS} - V_{TN})^2
 \end{equation}
 Where
 \begin{equation}
@@ -261,7 +261,7 @@ V_{in} = V_{GS} - V_{SS} = 0.5 V
 V_{GS} = 1.5 V
 \end{equation}
 
-To get the W/L we can use the current:
+To get the W/L we can use the current and set K:
 
 \begin{equation}
 i_{d} = K * (V_{GS} - V_{TN})^2
@@ -280,36 +280,67 @@ i_{d} = 4mA = K * (1.5 - 0.5)^2
 \end{equation}
 
 \begin{equation}
-i_{d} = 4mA = \frac{K}{2}
+4mA = K =  171.8\frac{uA}{V^2}\frac{W}{L}
 \end{equation}
 
 \begin{equation}
-4mA = K * (3 - 2.25)V
-\end{equation}
-
-\begin{equation}
-4*10^{-3} A = K * 0.75V
-\end{equation}
-
-\begin{equation}
-\frac{16}{3}*10^{-3} = K = \frac{1}{2}(\mu_n C_{ox})\frac{W}{L} = 171.8 \frac{uA}{V^2} \frac{W}{L}
-\end{equation}
-
-\begin{equation}
-\frac{W}{L} = \frac{80000}{2577} \approx 31.04
+\frac{W}{L} = \frac{20000}{859} \approx 23.28
 \end{equation}
 
 
 
 \subsubsection*{b)}
-Verify the transfer characteristics by Spice simulation.
+Verify the transfer characteristics by Spice simulation.\\
+
+After running many sims on LTspice I moved to using Cadence with the provided spetcre models.
+\includegraphics[width=4in]{images/Problem4design.png} \\
+
+One issue found was how much the DC point changed with length regardless of the W/L ratio.
+\includegraphics[width=6in]{images/Problem4lowerlength.png} \\
+\includegraphics[width=6in]{images/Problem4higherlength.png} \\
+After testing many ratios at different lengths and although the Q point lowered with length (regardless of width ratio), the ratio of 23.23 would not work.
+I found that the ratio of 26.5 with a length of 900n would work well.\\
+
+\includegraphics[width=4in]{images/Problem4design2.png} \\
+
 
 \subsubsection*{c)}
-Analytically determine the dc voltage gain at the Q-point established in a).
+Analytically determine the dc voltage gain at the Q-point established in a).\\
+
+\begin{equation}
+g_m = \frac{\partial i_{d}}{\partial v_{sig}}
+\end{equation}
+
+With the equation:
+\begin{equation}
+i_{d} = K * (V_{GS} - V_{TN})^2(1+\lambda V_{DS})
+\end{equation}
+We can add the small signal to the equation:
+
+\begin{equation}
+i_{d} = K * (V_{GS} + V_{sig} - V_{TN})^2(1+\lambda V_{DS})
+\end{equation}
+
+\begin{equation}
+\frac{\partial i_{d}}{\partial v_{sig}} = 2K * (V_{GS} + V_{sig} - V_{TN}) (1+\lambda V_{DS})
+\end{equation}
+
+\begin{equation}
+\frac{\partial i_{d}}{\partial v_{sig}} = 2 * 171.8 \frac{uA}{V^2} * (1 + V_{sig}) * \frac{W}{L}(1+\lambda 1.5)
+\end{equation}
+
+\begin{equation}
+\frac{\partial i_{d}}{\partial v_{sig}} = 2 * 0.004 * (1 + V_{sig})(1+\lambda 1.5)
+\end{equation}
+
+
+
 
 \subsubsection*{d)}
 Using SPICE, obtain a plot of the small signal voltage gain versus the
-quiescent output voltage.
+quiescent output voltage.\\
+\includegraphics[width=4in]{images/Problem4design3.png} \\
+
 
 \subsection*{Problem 5 and 6}
 Design a 5T op amp to have a dc gain of 50dB and a GB of 2MHz
@@ -318,21 +349,56 @@ Assume also that the bias voltages \(V_{B1}\) and \(V_{B2}\) can be precisely se
 Verify the gain and the GB of your design with a SPICE simulation.\\
 \includegraphics[width=4in]{images/Problem5.png} \\
 
+
+
+First convert the $50dB = 10 log(\frac{V_{out}}{V_{in}})$. We then get that $A = 10^5$.
+From the data sheet we find that:
+\begin{equation}
+\lambda_1 = 0.30
+\end{equation}
+
+\begin{equation}
+\lambda_3 = 0.35
+\end{equation}
+
+\begin{equation}
+V_{THP} = -0.90
+\end{equation}
+\begin{equation}
+V_{THN} = 0.76
+\end{equation}
 We can use the equations given in the lecture slides.\\
 \includegraphics[width=4in]{images/5TOpamp.png} \\
 \includegraphics[width=4in]{images/5TOpampPractical.png} \\
-
-First convert the $50dB = 10 log(\frac{V_{out}}{V_{in}})$. We then get that $A = 10^5$.
-
-
 \begin{equation}
-A = \frac{1}{\lambda_1 + \lambda_2} \frac{1}{V_{EB1}} = 10^5 =
+A = \frac{1}{\lambda_1 + \lambda_3} \frac{1}{V_{EB1}} = 10^5 = \frac{20}{13}\frac{1}{V_{EB1}} 
 \end{equation}
 
+\begin{equation}
+V_{EB1} = 1.538*10^{-5}V
+\end{equation}	
 
 \begin{equation}
-g_{mn} = (\mu_n C_{ox})\frac{W}{L} = 57.8*2 \frac{W}{L}
+GB = 2Mhz = \frac{P}{V_{DD}C_L} \frac{1}{V_{EB1}}
 \end{equation}
+
+\begin{equation}
+P = 1.077*10^-10 W
+\end{equation}
+
+\begin{equation}
+g_m = 2K * (V_{GS} - V_{TH})
+\end{equation}
+
+\begin{equation}
+g_{m3} = 2K * (V_{B1} + 0.94)
+\end{equation}
+
+\begin{equation}
+g_{m3} = 2K * .94
+\end{equation}
+
+\includegraphics[width=6in]{images/Problem5design.png} \\
 
 
 
@@ -343,7 +409,7 @@ the amplifier you designed in the previous problem.
 \subsection*{Problem 8}
 Assume that the op amp is a single-pole amplifier with gain given by the
 expression \(A(s) = \frac{A_{0} \omega_A}{s + \omega_A} \approx \frac{GB}{s}\), where the gain-bandwidth product of the op amp is
-\(GB = A_0\omega_A\). The right-most approximation to the gain is almost always justifiable whenused to characterize the operational amplifier since the gain of the op amp is so large at dc and since at frequencies even modestly above $/omega_A$, there is little difference between the middle term and the right term in this expression.\\
+\(GB = A_0\omega_A\). The right-most approximation to the gain is almost always justifiable whenused to characterize the operational amplifier since the gain of the op amp is so large at dc and since at frequencies even modestly above $\omega_A$, there is little difference between the middle term and the right term in this expression.\\
 
 \subsubsection*{a)}
 Assuming that the frequency-dependent gain of the op amp can be modeled as
@@ -409,46 +475,110 @@ V_P = 0
 \begin{equation}
 \frac{V_{out}}{V_{in}} = \frac{-(R_2)(A)}{R_1(A) + R_1 + R_2}
 \end{equation}
-The vout and VN
 
+
+\begin{equation}
+\frac{V_{out}}{V_{in}} = \frac{-(R_2)(\frac{A_{GB}}{s})}{R_1(\frac{A_{GB}}{s}) + R_1 + R_2}
+\end{equation}
 
 
 \subsubsection*{b)}
 With the same op amp model used in part a), analytically determine the 3dB
 bandwidth of the following two amplifiers.
 
+We need to find the magnitude of the transfer function while using $s=j\omega$ and set it to $\frac{1}{\sqrt{2}}$.
 
+\begin{equation}
+|H(\omega)| = \frac{|A_{GB}(R_1 + R_2)|}{\sqrt{\omega(R_1 + R_2)^2 + (R_1 * A_{GB})^2}}
+\end{equation}
 
-\subsubsection*{c)}
-Derive the gain of the inverting feedback amplifier in terms of \(A_{V}\) and \(\beta\) and
-comment on why it does not look like the standard feedback equation.
+\begin{equation}
+\frac{1}{\sqrt{2}} = \frac{|A_{GB}(R_1 + R_2)|}{\sqrt{\omega(R_1 + R_2)^2 + (R_1 * A_{GB})^2}}
+\end{equation}
+And for the second circuit.
+
+\begin{equation}
+\frac{V_{out}}{V_{in}} = \frac{-(R_2)(\frac{A_{GB}}{s})}{R_1(\frac{A_{GB}}{s}) + R_1 + R_2}
+\end{equation}
+
+\begin{equation}
+|H(\omega)| = \frac{|(R_2)A_{GB}|}{\sqrt{(R_1 A_{GB})^2 + (\omega(R_1 + R_2))^2}}
+\end{equation}
+
 
 \subsection*{Problem 9}
-It was stated in class that all even-ordered distortion terms introduced by
-the amplifier vanish in symmetric fully differential amplifiers. Prove this fact.
+It was stated in class that all even-ordered distortion terms introduced by the amplifier vanish in symmetric fully differential amplifiers. Prove this fact.
+
+Because of the symmetry of the op amp the gain of each output is considered to be the same. We can represent distortion as:
+\begin{equation}
+V_d = V_{in+} -V{in-}
+\end{equation}
+
+The outputs can be represented as a taylor series. 
+
+Because Vin+ can be assumed to be positive (in respect to Vin-) all the time we can get a positive derivative every . 
+\begin{equation}
+V_{out+} = a_1V_{in+} + a_2V_{in+}^2 + a_3V_{in+}^3 + ...
+\end{equation}
+But because Vin- is assumed negative (in respect to Vin+) we can assume that the every other derivative will be negative.
+
+\begin{equation}
+V_{out-} = a_1V_{in-} + a_2V_{in-}^2 + a_3V_{in-}^3 + ...
+\end{equation}
+
+When we get our final VOUT we can see that all the even terms of these series will cancel out.
+
 
 \subsection*{Problem 10 (Extra Credit)}
 The “dead network” of a circuit is obtained by setting all small-signal inputs to 0. That is, by replacing all ac voltage sources with short circuits and all ac current sources with open circuits. The $\beta$ of a feedback amplifier is a characteristic of the “dead network”. Consider the basic inverting and noninverting feedback amplifiers shown below. These are widely used as small-signal voltage amplifiers.\\
-\includegraphics[width=6in]{images/Problem10.png} \\
+\includegraphics[width=3in]{images/Problem10.png} \\
 
 \subsubsection*{a)}
-Show that they both have the same “dead network”.
+Show that they both have the same “dead network”.\\
+
+If Vin is set to 0 then it is the same as ground. Replacing Vin with ground in the first circuit yields the same as replacing Vin with ground in the second circuit.\\
+\includegraphics[width=2in]{images/p10p1.png} \\
 
 \subsubsection*{b)}
-The \(\beta\) of the two amplifiers shown is \(\frac{1}{1 + \frac{R_1}{R_2}}\). Show that the gain of the
+The \(\beta\) of the two amplifiers shown is \(\ \frac{R_1}{R_1 + R_2}\). Show that the gain of the
 noninverting feedback amplifier can be expressed by the standard feedback
 equation
 \[
-A = \frac{V_{OUT}}{V_{IN}} = \frac{1 + \frac{R_2}{R_1}}{\frac{R_2}{R_1}}
+A = \frac{V_{OUT}}{V_{IN}} = \frac{A_v }{1+ A_v \beta}
 \]
+
+
+
+This can be seen by using the equation 5 from problem 8.
+
+\begin{equation}
+\frac{V_{out}}{V_{in}} = \frac{A(s)}{1+\frac{R_1 * A(s)}{R_2 + R_1}} 
+\end{equation}
+
 
 \subsubsection*{c)}
 Take the limit as \(A_V\) goes to $\infty$ for the gain derived in part b) and compare with
-that derived in EE 230 for the gain of the noninverting feedback amplifier.
+that derived in EE 230 for the gain of the noninverting feedback amplifier.\\
+\begin{equation}
+\frac{V_{OUT}}{V_{IN}} = \lim_{A_V\to\infty} \frac{A_v (1 + \frac{R_1}{R_2})}{(1 + \frac{R_1}{R_2})+ A_v } = 1 + \frac{R_1}{R_2}
+\end{equation}
+It is the same!
 
 \subsubsection*{d)}
 Derive the gain of the inverting feedback amplifier in terms of \(A_V\) and \(\beta\) and
 comment on why it does not look like the standard feedback equation.
+
+
+In problem 8 we derived this to be:
+\begin{equation}
+\frac{V_{out}}{V_{in}} = \frac{-(R_2)(A)}{R_1(A) + R_1 + R_2}
+\end{equation}
+
+\begin{equation}
+\frac{V_{out}}{V_{in}} = \frac{-(A)}{\frac{R_1}{R_2}(A) + \frac{R_1}{R_2} + 1}
+\end{equation}
+
+It seems that we have an extra term in the bottom of the equation.
 
 
 
