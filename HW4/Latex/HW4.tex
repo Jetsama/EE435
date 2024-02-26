@@ -1,0 +1,116 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[10pt,a4paper]{article}
+\usepackage[left=25mm,right=25mm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\author{}
+\date{}
+
+
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+\epstopdfDeclareGraphicsRule{.gif}{png}{.png}{convert gif:#1 png:\OutputFile}
+\AppendGraphicsExtensions{.gif}
+\usepackage{chngcntr}
+\counterwithin*{equation}{section}
+\counterwithin*{equation}{subsection}
+\usepackage{amsmath}
+
+\usepackage{float} 
+\usepackage{hyperref}
+\usepackage{amsmath}
+\let\oldsubsection\subsection
+\renewcommand{\subsection}{%
+    \setcounter{equation}{0}%
+    \oldsubsection%
+}
+\begin{document}
+
+
+\begin{flushleft}
+\begin{LARGE}EE 435 Homework 4 Spring 2024
+\end{LARGE}
+\\Jonathan Hess
+\\\href{https://github.com/Jetsama/EE435/tree/main/HW4}{GitHub Page}
+\end{flushleft}
+
+
+\subsection*{Problem 1 and 2}
+The model parameters $\mu$, C OX, VTH and $\lambda$ are widely used in analytical
+formulations of the performance of analog circuits. These parameters are used to
+characterize how MOS transistors operate in the square-law model of the transistor.
+When operating in the saturation region, the square-law model for the drain
+current of transistors can be expressed as
+$I_D =  $
+
+
+Though this square-law formulation is a simplification, it gives reasonable results that
+can be used for much of the design process. Better and more comprehensive models,
+such as the BSIM models, are then used in computer simulations to more accurately
+predict performance and for refining the design to meet target specifications. The BSIM
+models, however, are not analytically tractable and thus unsuitable for analytical
+formulations. Though intermediate models that are more accurate than the square-law
+models and less comprehensive than the BSIM models exist, there is little evidence of
+analytical tractability for models with complexity beyond that of the square-law model.
+Many analog circuits are quite sensitive to the parameter $\lambda$ in the square-law
+model. Unfortunately, the parameter $\lambda$ is quite sensitive to device dimensions and
+operating point. As such, a table or plot of $\lambda$ parameters is useful when using the square-
+law model for predicting the performance of many analog circuits based upon the square-
+law model.
+Generate plots of $\lambda$ for both n-channel and p-channel transistors in the 0.18$\mu$m
+CMOS for different lengths and for three different values of W and for three different
+values of VDS as shown below. Comment on how $\lambda$ varies with device dimensions and
+operating points. When determining $\lambda$, assume that the devices are modeled by the
+BSIM model which is embedded in the PDK file used in SPECTRE. Extract $\lambda$ at a given
+operating point by taking two measurements (simulation results) of the drain current at
+values of VDS slightly above and slightly below the target VDS value on a constant VGS
+locus as shown in the plot below. This is likely how you extracted the parameter $\lambda$ in EE
+330. The length should vary between LMIN and 20LMIN and the VDS values should be
+from slightly above VEB to 2.5V.
+
+
+
+http://class.ece.iastate.edu/ee435/miscHandouts/TSMC%200.18%20T48K.pdf
+
+http://class.ece.iastate.edu/ee330/lectures/EE%20330%20Lect%2025%20Fall%202023.pdf
+
+\end{document}
+
+
+
+
+
+
+
