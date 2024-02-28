@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.20)  28 FEB 2024 16:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.20)  26 FEB 2024 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./HW4.tex
-(HW4.tex
+**./Lab2.tex
+(Lab2.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30>
 (C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -444,8 +444,8 @@ ftex.def
 File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count304
 \l__pdf_internal_box=\box102
-) (HW4.aux)
-\openout1 = `HW4.aux'.
+) (Lab2.aux)
+\openout1 = `Lab2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
 LaTeX Font Info:    ... okay on input line 59.
@@ -518,60 +518,42 @@ kii
 \everyMPtoPDFconversion=\toks27
 )
 Package hyperref Info: Link coloring OFF on input line 59.
- (HW4.out) (HW4.out)
+ (Lab2.out) (Lab2.out)
 \@outlinefile=\write3
-\openout3 = `HW4.out'.
+\openout3 = `Lab2.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
+<images/figure1.png, id=4, 368.87813pt x 331.2375pt>
+File: images/figure1.png Graphic file (type png)
+<use images/figure1.png>
+Package pdftex.def Info: images/figure1.png  used on input line 88.
+(pdftex.def)             Requested size: 216.81pt x 194.68544pt.
+<images/figure2.png, id=6, 434.37282pt x 450.9347pt>
+File: images/figure2.png Graphic file (type png)
+<use images/figure2.png>
+Package pdftex.def Info: images/figure2.png  used on input line 99.
+(pdftex.def)             Requested size: 216.81pt x 225.08147pt.
 
-
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
-
-
-(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 111--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--125
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
 [1
 
-{C:/Users/Jetsan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 127--131
+{C:/Users/Jetsan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/fi
+gure1.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 116
+.
 
- []
+(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 116
+.
 
-<images/Lecture5Slide.png, id=20, 691.08188pt x 507.39563pt>
-File: images/Lecture5Slide.png Graphic file (type png)
-<use images/Lecture5Slide.png>
-Package pdftex.def Info: images/Lecture5Slide.png  used on input line 135.
-(pdftex.def)             Requested size: 216.81pt x 159.18011pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
-
- []
-
-<images/Mirror.png, id=22, 391.4625pt x 228.10219pt>
-File: images/Mirror.png Graphic file (type png)
-<use images/Mirror.png>
-Package pdftex.def Info: images/Mirror.png  used on input line 138.
-(pdftex.def)             Requested size: 216.81pt x 126.33368pt.
-<images/Lecture5Slide28.png, id=23, 667.74469pt x 511.15968pt>
-File: images/Lecture5Slide28.png Graphic file (type png)
-<use images/Lecture5Slide28.png>
-Package pdftex.def Info: images/Lecture5Slide28.png  used on input line 142.
-(pdftex.def)             Requested size: 216.81pt x 165.96892pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--143
+(C:\Users\Jetsan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
@@ -580,45 +562,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--143
 
  []
 
-[2 <./images/Lecture5Slide.png> <./images/Mirror.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+<images/diffopamp.png, id=15, 664.73344pt x 496.85625pt>
+File: images/diffopamp.png Graphic file (type png)
+<use images/diffopamp.png>
+Package pdftex.def Info: images/diffopamp.png  used on input line 147.
+(pdftex.def)             Requested size: 216.81pt x 162.05255pt.
+
+LaTeX Warning: Citation `opamp' on page 2 undefined on input line 148.
+
+[2 <./images/figure2.png>]
+<images/mosTB.png, id=25, 839.38594pt x 391.4625pt>
+File: images/mosTB.png Graphic file (type png)
+<use images/mosTB.png>
+Package pdftex.def Info: images/mosTB.png  used on input line 157.
+(pdftex.def)             Requested size: 216.81pt x 101.10884pt.
+
+
+LaTeX Warning: Citation `opamp' on page 3 undefined on input line 158.
+
+<images/mosTBEQ.png, id=26, 677.53125pt x 373.395pt>
+File: images/mosTBEQ.png Graphic file (type png)
+<use images/mosTBEQ.png>
+Package pdftex.def Info: images/mosTBEQ.png  used on input line 163.
+(pdftex.def)             Requested size: 433.62pt x 238.97768pt.
+
+LaTeX Warning: Citation `opamp' on page 3 undefined on input line 164.
+
+[3 <./images/diffopamp.png> <./images/mosTB.png>]
+<images/lambda2graph.png, id=37, 1016.29688pt x 438.8897pt>
+File: images/lambda2graph.png Graphic file (type png)
+<use images/lambda2graph.png>
+Package pdftex.def Info: images/lambda2graph.png  used on input line 170.
+(pdftex.def)             Requested size: 433.62pt x 187.25896pt.
+
+
+LaTeX Warning: Citation `opamp' on page 4 undefined on input line 171.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--178
 
  []
 
+[4 <./images/mosTBEQ.png> <./images/lambda2graph.png>] [5] (Lab2.aux)
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+LaTeX Warning: There were undefined references.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
-
- []
-
-[3 <./images/Lecture5Slide28.png>] (HW4.aux)
-Package rerunfilecheck Info: File `HW4.out' has not changed.
+Package rerunfilecheck Info: File `Lab2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11620 strings out of 476331
- 183459 string characters out of 5787293
- 1865660 words of memory out of 5000000
- 31890 multiletter control sequences out of 15000+600000
+ 11647 strings out of 476331
+ 183957 string characters out of 5787293
+ 1857660 words of memory out of 5000000
+ 31911 multiletter control sequences out of 15000+600000
  515198 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,5n,67p,381b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,7n,67p,382b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx10.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmbx12.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Jetsan/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Jetsan/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jetsan/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Jetsan/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Je
-tsan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on HW4.pdf (3 pages, 210321 bytes).
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jetsan/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Jetsan/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on Lab2.pdf (5 pages, 366981 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -101,6 +101,52 @@ locus as shown in the plot below. This is likely how you extracted the parameter
 from slightly above VEB to 2.5V.
 
 
+\subsection*{Problem 3}
+
+Consider the 5T op amp configured used as a transconductance amplifier
+in the circuit shown below. Assume the op amp is designed in a 0.18$\mu$m ON CMOS
+process with VDD =1.2V, VSS=-1.2V, L=2$\mu$m and V EB=100mV for all transistors, and the
+power in the op amp is 1mW. Assume $\lambda$=.01V
+
+\subsubsection*{a)}What is W1?\\
+\\
+To find all W we can look at constraints.\\
+$W1 = W2$\\
+$W3 = W4$\\
+$P = 2.4V (Id) = 1mW$\\
+$V_{EB} = 100mV = VGS-Vt$\\
+$V_{SD3} + V_{DS1} + V_{DS5} = 2.4$
+\\
+The max tail current is 416.6$\mu$A which means that current through M1 is 208.3$\mu$A. Using the current equation and K from the datasheet (K = 171.8$\mu$)we get:\\
+$I_d = \frac{W}{L}(K)(VGS-Vt)^2(1+V_{DS}\lambda) = 208.3\mu A = (.01)* 171.8\mu * \frac{W}{L}(1+V_{DS}(.01))$\\
+$I_d = \frac{W}{L}(K)(VGS-Vt)^2= 208.3\mu A = (.01)* 171.8\mu * \frac{W}{L}$\\
+We get that:\\
+$w = 121.265 * L = 242.53\mu m$\\ 
+
+
+\subsubsection*{b)} What is the quiescent voltage at the source of M1 ?\\
+\\
+The voltage drop across M3 is id*Gm3
+The voltage on source
+
+\subsubsection*{c)}Obtain an expression for the small signal voltage gain of the OTA circuit in terms of the small-signal parameters g m1, R1 , and C1.
+
+These expressions are available in the lecture 5 slides\\
+\includegraphics[width=3in]{images/Lecture5Slide.png} \\
+
+These were found by splitting the circuit into quarters and mirroring the left and right sides.\\
+\includegraphics[width=3in]{images/Mirror.png} \\
+By doing this we can analyze the F and P circuits individually.\\
+\\
+For the P circuit we have a single transistor connected to itself. Because of the current mirror the second P (on the right side) is also virtually connected to itself. This means that it acts as a resistor with no external biasing.\\
+\includegraphics[width=3in]{images/Lecture5Slide28.png} \\
+
+\subsubsection*{d)}Numerically determine and plot the small signal frequency dependent voltage gain if R1 =50K and C1 =40pF\\
+
+\subsubsection*{e)}Determine the 3dB bandwidth\\
+
+\subsubsection*{f)}How does the 3dB bandwidth change if the power in increased by 20\% by changing VB2?\\
+
 
 http://class.ece.iastate.edu/ee435/miscHandouts/TSMC%200.18%20T48K.pdf
 
